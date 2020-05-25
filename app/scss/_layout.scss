@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  width: 100%;
+}
+
+main {
+  width: 75%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+aside {
+  width: 25%;
+}

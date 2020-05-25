@@ -65,10 +65,9 @@ function generateGrid() {
   const gridContainer = document.querySelector("#grid-container");
   gridContainer.setAttribute(
     "style",
-    `grid-template-columns: repeat(${columns}, 25px); grid-template-rows: repeat(${rows},25px);`
+    `grid-template-columns: repeat(${columns}, minmax(auto, 100px)); grid-template-rows: repeat(${rows},1fr);`
   );
   const gridArr = [];
-  console.log(matrixArr);
 
   matrixArr.map((row, index) => {
     const rowIndex = index;
