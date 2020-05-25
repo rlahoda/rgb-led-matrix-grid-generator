@@ -1,0 +1,35 @@
+$bp-xsmall: 600px;
+$bp-small: 780px;
+$bp-med: 1060px;
+$bp-large: 1400px;
+
+$primary-color: #0e97c2;
+$primary-light: #7acfe9;
+$primary-dark: #0e4759;
+$alert: #ff0f0f;
+$alert-light: #fd7f7f;
+$alert-dark: #8d0909;
+$alert-green: #3dbc12;
+$alert-green-dark: #2a8e08;
+
+@mixin respond-at($media) {
+  @media only screen and (min-width: $media) {
+    @content;
+  }
+}
+
+/* Example of Media Query Mixin:
+   @include respond-at($bp-small) {
+      width: 250px;
+  }
+  */
+
+@mixin respond-at-height($media) {
+  @media only screen and (min-height: $media) {
+    @content;
+  }
+}
+
+@import "reset";
+@import "typography";
+@import "grid";

@@ -6,5 +6,33 @@
     <title>RGB LED Matrix Grid Generator</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <!-- grid options -->
+      <label for="columns-input">Columns</label
+      ><input
+        type="number"
+        name="columns"
+        id="columns-input"
+        value="5"
+        min="1"
+      />
+      <label for="rows-input">Rows</label>
+      <input type="number" name="rows" id="rows-input" value="5" min="1" />
+    </header>
+    <main>
+      <!-- grid -->
+      <div class="grid-container" id="grid-container">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+      </div>
+    </main>
+    <aside>
+      <!-- color picker -->
+    </aside>
+    <script src="js/grid.js"></script>
+  </body>
 </html>
